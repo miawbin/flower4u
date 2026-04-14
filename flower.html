@@ -10,11 +10,20 @@
 
   <!-- Document Title -->
   <title>FLOWERS</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body class="not-loaded">
   <!-- Background -->
   <div class="night"></div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="assets/music/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <!-- Flower -->
   <div class="flowers">
@@ -316,9 +325,62 @@
 
   <!-- Title -->
   <h1 class="title"><span id="title"></span></h1>
+
+  <!-- Birthday Button -->
+  <div style="position: absolute; bottom: 50px; width: 100%; display: flex; justify-content: center;">
+    <button id="birthday-btn" class="birthday-button">
+      <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+        <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+        </path>
+      </svg>
+      <span class="text">Click for a surprise</span>
+    </button>
+  </div>
+
+  <!-- Birthday Message Modal -->
+  <div id="birthday-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="birthday-message">
+        <img src="assets/picture/picture.jpg" alt="Birthday Picture" class="birthday-image">
+        <h2>Happy Birthday, My Babyyy</h2>
+        <p>Another year of you, and somehow I still get lucky having you.</p>
+        <p>Serious, aku masih ga ngerti gimana aku bisa dapet kamu.</p>
+        <br>
+        <p>Makasih ya udah jadi tempat aku pulang.</p>
+        <p>Yang selalu aku cari tanpa sadar.</p>
+        <p>Yang bikin hari biasa jadi lebih berarti.</p>
+        <br>
+        <p>Aku suka semua tentang kamu.</p>
+        <p>Cara kamu peduli.</p>
+        <p>Cara kamu sabar.</p>
+        <p>Cara kamu tetap di sini, even when I'm not easy.</p>
+        <br>
+        <p>Semoga di umur kamu sekarang:</p>
+        <ul>
+          <li>Hati kamu selalu tenang</li>
+          <li>Langkah kamu selalu dimudahin</li>
+          <li>Dan kamu selalu ngerasa dicintai, especially by me</li>
+        </ul>
+        <br>
+        <p>Aku mungkin ga selalu sempurna,</p>
+        <p>Tapi aku selalu tulus sama kamu.</p>
+        <p>Dan aku selalu milih kamu, tiap hari.</p>
+        <br>
+        <p>Hari ini kamu harus bahagia.</p>
+        <p>Dan aku harap aku jadi bagian dari bahagia itu.</p>
+        <br>
+        <p>Stay with me ya,</p>
+        <p>A little longer. A lot longer.</p>
+        <br>
+        <p><strong>I love you, always.</strong></p>
+        <p>Sabrina Alzikra</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
 
 <!-- Import Javascript -->
-<script src="js/main.js"></script> perbagus
+<script src="js/main.js"></script>
